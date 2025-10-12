@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Title from '../atoms/Title';
 import Text from '../atoms/Text';
@@ -12,8 +11,8 @@ const HeroSection: React.FC = () => {
         <div className="relative">
           <img 
             // Actualiza el src directamente
-            src="/joven.jpg" 
-            alt="Tu nombre" 
+            src="src/assets/joven.jpg" 
+            alt="Bastian" 
             className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-accent shadow-lg" 
           />
           <span className="absolute bottom-0 right-0 transform translate-y-1/2 bg-gray-700 text-sm text-gray-300 px-3 py-1 rounded-full border border-gray-600">
