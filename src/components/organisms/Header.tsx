@@ -2,12 +2,15 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaRegEnvelope, FaUser, FaBriefcase, FaCode, FaBars, FaTimes } from 'react-icons/fa';
-import ContactModal from '../molecules/ContactModal'; // <-- ¡Importamos el nuevo modal!
 
-const Header: React.FC = () => {
+// Definimos la interfaz para recibir el prop
+interface HeaderProps {
+  openModal: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ openModal }) => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // <-- Nuevo estado para el modal
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,13 +31,9 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   
-  const openModal = () => {
-    setIsModalOpen(true);
+  const handleOpenModal = () => { // Usamos una nueva función para llamar a la prop
+    openModal();
     setIsMenuOpen(false); // Cierra el menú de hamburguesa si está abierto
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
   };
 
   const headerClasses = `py-4 fixed top-0 left-0 w-full z-10 transition-all duration-300 bg-darkBackground ${scrolled ? 'md:bg-transparent' : 'md:bg-darkBackground'}`;
@@ -69,8 +68,7 @@ const Header: React.FC = () => {
             <a href="#sobre-mi" className="text-current hover:text-accent transition-colors">
               <FaUser className="inline-block mr-1" /> Sobre mí
             </a>
-            {/* El botón de contacto ahora abre el modal */}
-            <button onClick={openModal} className="text-current hover:text-accent transition-colors">
+            <button onClick={handleOpenModal} className="text-current hover:text-accent transition-colors">
               <FaRegEnvelope className="inline-block mr-1" /> Contacto
             </button>
           </div>
@@ -91,14 +89,12 @@ const Header: React.FC = () => {
             <a href="#sobre-mi" className="flex items-center space-x-2 py-3 px-4 rounded-full bg-gray-800 text-current hover:text-accent transition-colors w-1/2 justify-center" onClick={toggleMenu}>
               <FaUser /> Sobre mí
             </a>
-            {/* El botón de contacto en móvil también abre el modal */}
-            <button onClick={openModal} className="flex items-center space-x-2 py-3 px-4 rounded-full bg-gray-800 text-current hover:text-accent transition-colors w-1/2 justify-center">
+            <button onClick={handleOpenModal} className="flex items-center space-x-2 py-3 px-4 rounded-full bg-gray-800 text-current hover:text-accent transition-colors w-1/2 justify-center">
               <FaRegEnvelope /> Contacto
             </button>
           </nav>
         )}
       </div>
-      <ContactModal isOpen={isModalOpen} onClose={closeModal} />
     </header>
   );
 };
