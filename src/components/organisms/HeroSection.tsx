@@ -9,7 +9,7 @@ import LinkButton from '../atoms/LinkButton';
 const HeroSection: React.FC = () => {
   return (
     <section id="inicio" className="text-center py-20 md:py-32 pt-32">
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-8">
         <div className="relative">
           <img 
             // Actualiza el src directamente
