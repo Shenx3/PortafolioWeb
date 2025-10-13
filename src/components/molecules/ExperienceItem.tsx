@@ -1,3 +1,5 @@
+// ExperienceItem representa un ítem de experiencia laboral o proyecto.
+// Muestra el título, empresa, duración, descripción y un enlace opcional para más información.
 import React from 'react';
 import Text from '../atoms/Text';
 import Title from '../atoms/Title';

@@ -1,6 +1,16 @@
+/* Index sirve para importar los estilos de Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html, body {
+  scroll-behavior: smooth; /* <-- Añade esta línea */
+}
+
+section[id] {
+  scroll-margin-top: 2rem; 
+}
 
 body {
   @apply bg-darkBackground text-primaryText font-sans;

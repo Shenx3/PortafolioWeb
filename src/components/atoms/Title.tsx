@@ -1,3 +1,5 @@
+// Title es un componente que renderiza títulos con diferentes niveles (h1, h2, h3, h4).
+// Permite personalizar el nivel del título y aplicar clases CSS adicionales a través de props.
 import React from 'react';
 
 interface TitleProps {

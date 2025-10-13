@@ -1,3 +1,4 @@
+// Definimos la interfaz Project y exportamos un array de proyectos
 interface Project { // Definimos la interfaz Project
   imageSrc: string; // Ruta de la imagen
   title: string; // Título del proyecto

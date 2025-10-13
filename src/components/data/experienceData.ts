@@ -1,3 +1,4 @@
+// Definimos la interfaz Experience y exportamos un array de experiencias
 interface Experience { // Definimos la interfaz Experience
   title: string; // Título del puesto
   company: string; // Nombre de la empresa

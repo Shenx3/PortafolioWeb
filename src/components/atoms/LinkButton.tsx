@@ -1,3 +1,6 @@
+// LinkButton sirve como un botón estilizado que puede actuar como un enlace.
+// Puede manejar enlaces internos y externos, y admite varios estilos y iconos.
+
 import React from 'react';
 import { FaLinkedin, FaEnvelope, FaCode, FaEye } from 'react-icons/fa';
 

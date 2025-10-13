@@ -1,3 +1,4 @@
+// Definimos la interfaz Certificate y exportamos un array de certificados
 interface Certificate { // Definimos la interfaz Certificate
   title: string; // Título del certificado
   issuer: string; // Emisor del certificado

@@ -1,3 +1,6 @@
+// ExperienceSection es una sección que muestra la experiencia laboral utilizando datos importados.
+// Cada experiencia se representa con el componente ExperienceItem.
+// Utiliza componentes atómicos para la estructura y el estilo.
 import React from 'react';
 import Title from '../atoms/Title';
 import ExperienceItem from '../molecules/ExperienceItem';

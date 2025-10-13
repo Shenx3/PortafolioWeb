@@ -1,3 +1,4 @@
+// App es el componente raíz de la aplicación que configura el enrutamiento y la estructura principal del sitio web.
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/organisms/Header';

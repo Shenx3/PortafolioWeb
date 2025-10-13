@@ -1,3 +1,5 @@
+// Footer es un componente que muestra el pie de página del sitio web.
+// Incluye el año actual, derechos de autor y enlaces de navegación.
 import React from 'react';
 import Text from '../atoms/Text';
 

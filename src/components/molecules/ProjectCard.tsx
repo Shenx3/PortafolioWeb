@@ -1,3 +1,5 @@
+// ProjectCard es un componente que muestra una tarjeta de proyecto con imagen, título, descripción, etiquetas y enlaces.
+// Incluye efectos de hover para mejorar la interactividad y utiliza componentes atómicos para la estructura.
 import React from 'react';
 import Title from '../atoms/Title';
 import Text from '../atoms/Text';

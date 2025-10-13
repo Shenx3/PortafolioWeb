@@ -1,3 +1,5 @@
+// AboutSection es una sección que presenta información sobre mí, incluyendo una imagen y varios párrafos de texto.
+// Utiliza componentes atómicos para la estructura y el estilo, y es responsiva para diferentes tamaños de pantalla.
 import React from 'react';
 import Title from '../atoms/Title';
 import Text from '../atoms/Text';
@@ -13,17 +15,20 @@ const AboutSection: React.FC = () => {
       <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-8">
         <div className="md:w-3/4">
           <Text className="mb-4">
-            Example
+            Hola, soy Bastián. Actualmente, soy estudiante de segundo año de <span className="text-accent font-semibold">Ingeniería Informática en DuocUC.</span>
           </Text>
           <Text className="mb-4">
-            Parrafo2
+            Soy una persona proactiva y orientada a los resultados, con una gran capacidad para el aprendizaje rápido y el trabajo en equipo.
+          </Text>
+          <Text className="mb-4">
+            Mi pasión por la tecnología me ha llevado a especializarme en <span className="text-accent font-semibold">Inteligencia Artificial</span>, un área en la que me estoy formando para crear soluciones innovadoras y de gran impacto.
           </Text>
           <Text>
-            Texto normal <span className="text-accent font-semibold">Texto no normal</span> Texto normal
+            Estoy ansioso por aplicar mis conocimientos para resolver problemas complejos y contribuir a proyectos que definan el futuro de la tecnología.
           </Text>
         </div>
         <div className="md:w-1/4 flex-shrink-0">
-          <img src={Image} alt="Miguel Ángel" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src={Image} alt="Bastian Bravo" className="rounded-lg shadow-lg w-full h-auto object-cover" />
         </div>
       </div>
     </section>

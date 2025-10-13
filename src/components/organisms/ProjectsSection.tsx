@@ -1,3 +1,6 @@
+// ProjectsSection es una sección que muestra una lista de proyectos utilizando datos importados.
+// Cada proyecto se representa con el componente ProjectCard.
+// Utiliza componentes atómicos para la estructura y el estilo.
 import React from 'react';
 import Title from '../atoms/Title';
 import ProjectCard from '../molecules/ProjectCard';

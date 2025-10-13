@@ -1,3 +1,5 @@
+// HeroSection es la sección principal de la página de inicio.
+// Presenta una imagen, un título, una descripción y botones de llamada a la acción.
 import React from 'react';
 import Title from '../atoms/Title';
 import Text from '../atoms/Text';

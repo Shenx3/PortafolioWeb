@@ -1,3 +1,5 @@
+// HeroButtons contiene botones de llamada a la acción para contactar y visitar LinkedIn.
+// Utiliza el componente LinkButton para estilizar los botones con iconos y enlaces.
 import React from 'react';
 import LinkButton from '../atoms/LinkButton';
 

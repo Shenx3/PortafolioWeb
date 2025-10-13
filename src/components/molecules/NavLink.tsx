@@ -1,3 +1,5 @@
+// NavLink es un componente que representa un enlace de navegación estilizado.
+// Acepta una URL de destino y el contenido del enlace como props.
 import React from 'react';
 
 interface NavLinkProps {

@@ -1,3 +1,6 @@
+// CertificatesSection es una sección que muestra una lista de certificados obtenidos.
+// Cada certificado incluye título, emisor, fecha, imagen y un enlace para ver el certificado completo.
+// Utiliza datos importados y componentes atómicos para la estructura y el estilo.
 import React from 'react';
 import Title from '../atoms/Title';
 import Text from '../atoms/Text';
