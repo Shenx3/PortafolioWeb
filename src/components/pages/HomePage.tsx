@@ -10,6 +10,7 @@ import Separator from '../atoms/Separator';
 import ContactModal from '../molecules/ContactModal';
 import Footer from '../organisms/Footer'; // <-- La importación del Footer se queda aquí
 import Header from '../organisms/Header';
+import ScrollToTopButton from '../atoms/ScrollToTopButton';
 
 const HomePage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +29,7 @@ const HomePage: React.FC = () => {
       <AboutSection />
       <Footer openModal={openModal} />
       <ContactModal isOpen={isModalOpen} onClose={closeModal} />
+      <ScrollToTopButton />
     </>
   );
 };

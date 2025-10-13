@@ -3,8 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes color-change {
+  0% {
+    color: var(--accent-color);
+  }
+  50% {
+    color: #ffc107; /* O puedes usar el color que quieras */
+  }
+  100% {
+    color: var(--accent-color);
+  }
+}
 
 html, body {
+  font-size: 20px;
   scroll-behavior: smooth; /* <-- Añade esta línea */
 }
 

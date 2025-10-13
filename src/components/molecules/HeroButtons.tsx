@@ -9,6 +9,9 @@ export const HeroButtons: React.FC = () => {
       <LinkButton to="mailto:bastianbravotobar@gmail.com" icon="email" variant="primary">
         Contáctame
       </LinkButton>
+      <LinkButton to = "https://github.com/Shenx3" icon="github" variant="primary">
+        GitHub
+      </LinkButton>
       <LinkButton to="https://www.linkedin.com/in/bastian-bravo-17b131370/" icon="linkedin" variant="secondary">
         LinkedIn
       </LinkButton>

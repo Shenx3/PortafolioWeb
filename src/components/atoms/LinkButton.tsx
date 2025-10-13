@@ -2,13 +2,13 @@
 // Puede manejar enlaces internos y externos, y admite varios estilos y iconos.
 
 import React from 'react';
-import { FaLinkedin, FaEnvelope, FaCode, FaEye } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaCode, FaEye, FaGithub } from 'react-icons/fa';
 
 interface LinkButtonProps {
   to: string;
   onClick?: () => void;
   children: React.ReactNode;
-  icon?: 'linkedin' | 'email' | 'code' | 'preview';
+  icon?: 'linkedin' | 'email' | 'code' | 'preview' | 'github';
   variant?: 'primary' | 'secondary' | 'outline' ;
   className?: string;
 }
@@ -18,6 +18,7 @@ const icons = {
   email: FaEnvelope,
   code: FaCode,
   preview: FaEye,
+  github: FaGithub,
 };
 
 const LinkButton: React.FC<LinkButtonProps> = ({ to, onClick, children, icon, variant = 'primary', className = '' }) => {
