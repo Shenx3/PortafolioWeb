@@ -9,7 +9,7 @@ interface LinkButtonProps {
   onClick?: () => void;
   children: React.ReactNode;
   icon?: 'linkedin' | 'email' | 'code' | 'preview' | 'github';
-  variant?: 'primary' | 'secondary' | 'outline' ;
+  variant?: 'primary' | 'secondary' | 'outline' | 'yellow' ;
   className?: string;
 }
 
@@ -31,6 +31,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ to, onClick, children, icon, va
     secondary: 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600',
     outline:
       'bg-transparent text-gray-300 border border-gray-500 hover:border-blue-600 hover:text-blue-600',
+    yellow: 'bg-yellow-600 hover:bg-yellow-500 text-white shadow-md',
   };
 
   const content = (

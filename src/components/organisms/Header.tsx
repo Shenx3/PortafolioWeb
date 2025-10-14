@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => {
     setIsMenuOpen(false); // Cierra el menú de hamburguesa si está abierto
   };
 
-  const headerClasses = `py-4 fixed top-0 left-0 w-full z-10 transition-all duration-300 bg-darkBackground ${scrolled ? 'md:bg-transparent' : 'md:bg-darkBackground'}`;
+  const headerClasses = `py-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-darkBackground ${scrolled ? 'md:bg-transparent' : 'md:bg-darkBackground'}`;
 
   return (
     <header className={headerClasses}>
