@@ -14,10 +14,10 @@ const Footer: React.FC<FooterProps> = ({ openModal }) => {
     <footer className="bg-darkBackground py-8 border-t border-gray-700 mt-12">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         <Text className="mb-4 md:mb-0">
-          &copy; {currentYear} Bastián Bravo. Todos los derechos reservados.
+          &copy; {currentYear} Bastián Bravo. Estudiante de Ingeniería Informática.
         </Text>
         <div className="flex space-x-6">
-          <a href="#sobre-mi" className="text-secondaryText hover:text-accent transition-colors">Sobre mí</a>
+          <a href="#inicio" className="text-secondaryText hover:text-accent transition-colors">Inicio</a>
           <button onClick={openModal} className="text-secondaryText hover:text-accent transition-colors">
             Contacto
           </button>
