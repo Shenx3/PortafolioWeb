@@ -53,7 +53,7 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => {
 
         {/* Menú de navegación para PC */}
         <nav className="hidden md:flex flex-grow justify-center">
-          <div className={`flex space-x-8 p-4 rounded-full border border-gray-700 transition-all duration-300 ${
+          <div className={`flex space-x-4 md:space-x-6 p-4 rounded-full border border-gray-700 transition-all duration-300 ${
             scrolled ? 'bg-gray-800/50 backdrop-blur-md' : 'bg-gray-800 shadow-lg'
           }`}>
             <a href="#experiencia" className="text-current hover:text-accent transition-colors">

@@ -5,7 +5,7 @@ import LinkButton from '../atoms/LinkButton';
 
 export const HeroButtons: React.FC = () => {
   return (
-    <div className="flex space-x-4 mt-6 justify-center">
+    <div className="flex flex-col space-y-4 mt-6 justify-center sm:flex-row sm:space-y-0 sm:space-x-4">
       <LinkButton to="mailto:bastianbravotobar@gmail.com" icon="email" variant="primary">
         Contáctame
       </LinkButton>
