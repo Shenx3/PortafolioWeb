@@ -14,7 +14,7 @@ export default {
         miduYellow: '#ffc107',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // Asume que estás usando la fuente Inter
+        sans: ['Inter', 'sans-serif'],
       }
     },
   },
