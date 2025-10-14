@@ -31,9 +31,9 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => {
     setIsMenuOpen(!isMenuOpen);
   };
   
-  const handleOpenModal = () => { // Usamos una nueva función para llamar a la prop
+  const handleOpenModal = () => {
     openModal();
-    setIsMenuOpen(false); // Cierra el menú de hamburguesa si está abierto
+    setIsMenuOpen(false);
   };
 
   const headerClasses = `py-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-darkBackground ${scrolled ? 'md:bg-transparent' : 'md:bg-darkBackground'}`;
@@ -54,21 +54,21 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => {
         {/* Menú de navegación para PC */}
         <nav className="hidden md:flex flex-grow justify-center">
           <div className={`flex space-x-4 md:space-x-6 p-4 rounded-full border border-gray-700 transition-all duration-300 ${
-            scrolled ? 'bg-gray-800/50 backdrop-blur-md' : 'bg-gray-800 shadow-lg'
+            scrolled ? 'bg-gray-800/50 backdrop-blur-md' : 'bg-gray-800 backdrop-blur-md shadow-lg'
           }`}>
-            <a href="#experiencia" className="text-current hover:text-accent transition-colors">
+            <a href="#experiencia" className="text-current hover:text-accent transition-colors flex-shrink-0">
               <FaBriefcase className="inline-block mr-1" /> Experiencia
             </a>
-            <a href="#certificados" className="text-current hover:text-accent transition-colors">
+            <a href="#certificados" className="text-current hover:text-accent transition-colors flex-shrink-0">
               <FaCode className="inline-block mr-1" /> Certificados
             </a>
-            <a href="#proyectos" className="text-current hover:text-accent transition-colors">
+            <a href="#proyectos" className="text-current hover:text-accent transition-colors flex-shrink-0">
               <FaCode className="inline-block mr-1" /> Proyectos
             </a>
-            <a href="#sobre-mi" className="text-current hover:text-accent transition-colors">
+            <a href="#sobre-mi" className="text-current hover:text-accent transition-colors flex-shrink-0">
               <FaUser className="inline-block mr-1" /> Sobre mí
             </a>
-            <button onClick={handleOpenModal} className="text-current hover:text-accent transition-colors">
+            <button onClick={handleOpenModal} className="text-current hover:text-accent transition-colors flex-shrink-0">
               <FaRegEnvelope className="inline-block mr-1" /> Contacto
             </button>
           </div>
