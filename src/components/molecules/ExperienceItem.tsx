@@ -15,7 +15,7 @@ interface ExperienceItemProps {
 export const ExperienceItem: React.FC<ExperienceItemProps> = ({ title, company, duration, description, link }) => {
   return (
     <div className="mb-12 relative">
-      <div className="absolute w-4 h-4 bg-miduYellow rounded-full -left-[37px] top-1 border-2 border-darkBackground"></div>
+      <div className="absolute w-4 h-4 bg-miduYellow rounded-full -left-[47px] top-1 border-0 border-darkBackground"></div>
       <Title level="h4" className="!text-xl font-semibold text-primaryText mb-1">
         {title}
       </Title>
