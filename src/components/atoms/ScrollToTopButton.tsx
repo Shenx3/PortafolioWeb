@@ -30,12 +30,12 @@ const ScrollToTopButton: React.FC = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 p-4 rounded-full bg-blue-600 text-white shadow-lg transition-opacity duration-300 ${
+      className={`fixed bottom-5 right-5 md:bottom-8 md:right-8 p-4 md:p-4 rounded-full bg-blue-600 text-white shadow-lg transition-opacity duration-300 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       aria-label="Volver al inicio"
     >
-      <FaArrowUp size={24} />
+      <FaArrowUp className="w-3 h-3 md:w-5 md:h-5" />
     </button>
   );
 };
