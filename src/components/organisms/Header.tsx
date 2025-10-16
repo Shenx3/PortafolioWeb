@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaRegEnvelope, FaUser, FaBriefcase, FaCode, FaBars, FaTimes } from 'react-icons/fa';
+import { GiDiploma } from 'react-icons/gi';
+
 
 // Definimos la interfaz para recibir el prop
 interface HeaderProps {
@@ -60,7 +62,7 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => {
               <FaBriefcase className="inline-block mr-1" /> Experiencia
             </a>
             <a href="#certificados" className="text-current hover:text-accent transition-colors flex-shrink-0">
-              <FaCode className="inline-block mr-1" /> Certificados
+              <GiDiploma className="inline-block mr-1" /> Certificados
             </a>
             <a href="#proyectos" className="text-current hover:text-accent transition-colors flex-shrink-0">
               <FaCode className="inline-block mr-1" /> Proyectos
@@ -81,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ openModal }) => {
               <FaBriefcase /> Experiencia
             </a>
             <a href="#certificados" className="flex items-center space-x-2 py-3 px-4 rounded-full bg-gray-800 text-current hover:text-accent transition-colors w-1/2 justify-center" onClick={toggleMenu}>
-              <FaCode /> Certificados
+              <GiDiploma /> Certificados
             </a>
             <a href="#proyectos" className="flex items-center space-x-2 py-3 px-4 rounded-full bg-gray-800 text-current hover:text-accent transition-colors w-1/2 justify-center" onClick={toggleMenu}>
               <FaCode /> Proyectos
