@@ -4,7 +4,6 @@ import React from 'react';
 import Title from '../atoms/Title';
 import Text from '../atoms/Text';
 import Image from '../../assets/joven.jpg';
-import Image2 from '../../assets/mono_formal.jpg'
 
 const AboutSection: React.FC = () => {
   return (
@@ -29,7 +28,7 @@ const AboutSection: React.FC = () => {
           </Text>
         </div>
         <div className="md:w-1/4 flex-shrink-0">
-          <img src={Image2} alt="Bastian Bravo" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src={Image} alt="Bastian Bravo" className="rounded-lg shadow-lg w-full h-auto object-cover" />
         </div>
       </div>
     </section>
