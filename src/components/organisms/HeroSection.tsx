@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
             // Actualiza el src directamente
             src="src/assets/joven.jpg" 
             alt="Bastian" 
-            className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-accent shadow-lg" 
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-accent shadow-lg object-cover" 
           />
         </div>
       </div>
